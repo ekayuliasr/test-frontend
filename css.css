@@ -1,0 +1,102 @@
+.parent {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.shape {
+	width: auto;
+	position: relative;
+}
+
+.square {
+	position: absolute;
+	background-color: red;
+	opacity: 0.5;
+	width: 150px;
+	height: 150px;
+}
+
+.circle {
+	border-radius: 50%;
+	position: absolute;
+	background-color: red;
+	opacity: 0.5;
+	width: 150px;
+	height: 150px;
+	margin-top: 75px;
+	margin-left: 75px;
+}
+
+.square--two {
+	position: relative;
+	background-color: red;
+	opacity: 0.5;
+	width: 150px;
+	height: 150px;
+	margin-top: 75px;
+	margin-left: 75px;
+}
+
+button {
+	background-color: white;
+	color: green;
+	font-size: 20px;
+	padding: 5px 20px 5px 20px;
+	border-radius: 5px;
+}
+
+button:hover {
+	border: 2px solid green;
+}
+
+button:focus {
+	background-color: green;
+	color: white;
+	border: 2px solid green;
+}
+
+button:disabled,
+button[disabled]{
+	opacity: 0.4;
+  	border: 2px solid green;
+ 	background-color: white;
+  	color: green;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+}
+
+#container--two {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 80vh;
+}
+
+#square {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	opacity: 0.5;
+	flex-basis: auto;
+}
+
+@media screen and (max-width: 576px){
+	.button {
+		flex-wrap: wrap;
+	}
+
+	.parent {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#container {
+		display: flex;
+		flex-direction: column;
+	}
+}
